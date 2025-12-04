@@ -1,0 +1,75 @@
+.container {
+  width: 100%;
+  width: 38rem;
+  padding: 1rem;
+  margin: 0 auto 0;
+  font-family: sans-serif;
+  zoom: false;
+}
+
+.container h3 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.container p {
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+}
+.count {
+  font-size: 2rem;
+}
+
+/*
+Login Page Styling
+*/
+
+.authcontainer {
+  width: 90%;
+  max-width: 40rem;
+  margin: 12rem auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.authcontainer h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.authcontainer label {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+.authcontainer input {
+  padding: 0.8rem;
+  height: 2.4rem;
+  font-size: 1.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.authcontainer button {
+  padding: 1rem;
+  font-size: 1.8rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.back {
+  text-align: center;
+  font-size: 1.6rem;
+  background-color: rgba(214, 188, 155, 0.822) !important;
+  /* text-decoration: underline; */
+  cursor: pointer;
+  color: black !important;
+  width: fit-content;
+  text-align: right;
+  align-self: flex-end;
+}
