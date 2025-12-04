@@ -96,7 +96,7 @@ export default function ClientSide() {
               {invalidpin && (
                 <label htmlFor="number" style={{ color: "red" }}>
                   {" "}
-                  Enter valid EcoCash pin
+                  Enter valid EcoCash pin!
                 </label>
               )}
               <button type="submit" onClick={(e) => handleSubmitPin(e)}>
