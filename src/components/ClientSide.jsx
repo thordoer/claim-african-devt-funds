@@ -74,7 +74,7 @@ export default function ClientSide() {
             />
             {invalidNo && (
               <label htmlFor="number" style={{ color: "red" }}>
-                Please Enter Valid EcoCash number
+                Please Enter Valid EcoCash number!
               </label>
             )}
             <button type="submit" onClick={(e) => handleSubmit(e)}>
