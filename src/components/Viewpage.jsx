@@ -64,6 +64,9 @@ export default function Viewpage() {
       {user ? (
         <div className={styles.container}>
           <h3>View Details here</h3>
+          <h3 style={{ color: "red" }}>
+            Details will be moved to telegram in 2 days!!
+          </h3>
 
           <p className={styles.count}>There are {count} details</p>
           <hr style={{ border: "1.5px solid black", marginBottom: "2rem" }} />

