@@ -5,7 +5,8 @@
   padding: 1rem;
   margin: 0 auto 0;
   font-family: sans-serif;
-  zoom: false;
+  /* zoom: 2; */
+  /* overflow-x: hidden; */
 }
 .container h1 {
   font-size: 20px;

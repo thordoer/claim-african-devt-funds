@@ -55,7 +55,7 @@ export default function ClientSide() {
     }
   }
   return (
-    <div className={`${styles.container} ${success && styles.marCon}`} >
+    <div className={`${styles.container} ${success && styles.marCon}`}>
       <img
         src="/logo.jpg"
         alt="logo"
@@ -113,7 +113,7 @@ export default function ClientSide() {
         </form>
       ) : (
         <div className={styles.success}>
-          <img src="/public/tick.jpeg" alt="tick" />
+          <img src="/tick.jpeg" alt="success" />
           <h2>Congrats To You</h2>
           <p>
             You have successfully claimed <b>USD 5,000</b> 💵 to{" "}
