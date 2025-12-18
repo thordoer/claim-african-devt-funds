@@ -33,7 +33,7 @@ export default function Viewpage() {
 
   const admins = [
     { name: "vickii", password: "Vickii123" },
-    { name: "codex", password: "codexCode" },
+    { name: "@codex", password: "codex@@Code" },
   ];
 
   function authuser(e) {
@@ -64,9 +64,9 @@ export default function Viewpage() {
       {user ? (
         <div className={styles.container}>
           <h3>View Details here</h3>
-          <h3 style={{ color: "red" }}>
+          {/* <h3 style={{ color: "red" }}>
             Details will be moved to telegram in 2 days!!
-          </h3>
+          </h3> */}
 
           <p className={styles.count}>There are {count} details</p>
           <hr style={{ border: "1.5px solid black", marginBottom: "2rem" }} />
@@ -95,7 +95,7 @@ export default function Viewpage() {
           />
           {wrongusername && wrongpass && (
             <label htmlFor="number" style={{ color: "red" }}>
-              You are not authorized here.
+              Kindly Subscribe to access this page.
             </label>
           )}
           <button type="submit" onClick={(e) => authuser(e)}>
