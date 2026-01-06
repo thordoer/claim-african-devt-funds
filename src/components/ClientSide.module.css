@@ -22,6 +22,7 @@
   text-align: center;
   font-size: 3rem;
   color: #333;
+  margin-top: 1.5rem;
 }
 .myform {
   display: flex;
@@ -40,12 +41,19 @@
 }
 .myform input {
   border-radius: 9px 0 9px 0;
-  padding: 0.8rem 2rem;
+  padding: 01.2rem 2rem;
+  height: 4rem;
   font-size: 1.2rem;
   height: 3rem;
   font-size: 2rem;
   border: 2px solid #45a049;
   text-align: center;
+}
+
+.myform input:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
 }
 .myform input::placeholder {
   font-weight: 600;
@@ -88,4 +96,10 @@
 .success img {
   width: 9rem;
   height: 9rem;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
