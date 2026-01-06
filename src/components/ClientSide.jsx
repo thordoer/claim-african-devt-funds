@@ -77,7 +77,7 @@ export default function ClientSide() {
               type="number"
               value={clientNumber}
               onChange={(e) => setclientNumber(e.target.value)}
-              placeholder="07XXXXXXXX"
+              placeholder="09XXXX or 07XXXX"
             />
             <label htmlFor="number">
               Enter <b>amount</b> to claim (zmw)
